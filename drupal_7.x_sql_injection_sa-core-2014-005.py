@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Drupal 7.x SQL Injection Example for SA-CORE-2014-005 https://www.drupal.org/SA-CORE-2014-005
+# Original: http://pastebin.com/nDwLFV3v
 # Creditz to https://www.reddit.com/user/fyukyuk
 #
 # Please use it only for testing purposes.
