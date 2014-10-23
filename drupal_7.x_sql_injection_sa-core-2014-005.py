@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-# Drupal 7.x SQL Injection SA-CORE-2014-005 https://www.drupal.org/SA-CORE-2014-005
+# Drupal 7.x SQL Injection Example for SA-CORE-2014-005 https://www.drupal.org/SA-CORE-2014-005
 # Creditz to https://www.reddit.com/user/fyukyuk
+#
+# Please use it only for testing purposes.
 
 import urllib2,sys
 from drupalpass import DrupalHash # https://github.com/cvangysel/gitexd-drupalorg/blob/master/drupalorg/drupalpass.py
