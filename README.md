@@ -14,6 +14,7 @@ See also:
 
  - [Security risk SA-CORE-2014-005 - Drupal core - SQL injection](https://www.drupal.org/SA-CORE-2014-005) at Drupal.org
  - [FAQ on SA-CORE-2014-005](https://www.drupal.org/node/2357241) at Drupal.org
+ - [Drupalgeddon](https://www.drupal.org/project/drupalgeddon) module 
  - [Database ExpandArguments placeholder naming issues when using array](https://www.drupal.org/node/2146839) at Drupal.org (independently reported in public Drupal issue tracker a year ago, without recognizing the impact)
  - [Advisory 01/2014: Drupal - pre Auth SQL Injection Vulnerability](https://www.sektioneins.de/en/advisories/advisory-012014-drupal-pre-auth-sql-injection-vulnerability.html) at sektioneins.de
  - [SA-CORE-2014-005 - Drupal core - SQL injection](http://www.reddit.com/r/netsec/comments/2jbu8g/sacore2014005_drupal_core_sql_injection/) at reddit
